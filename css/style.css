@@ -1,0 +1,215 @@
+body {
+	overflow: hidden;
+	text-align: center;
+}
+
+.page {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+img#logo {
+	height: 100%;
+	max-width: 100%;
+}
+
+#page1 {
+	display: block;
+}
+
+#page1 #subpage {
+	top: 35%;
+	display: block;
+}
+
+#page2 {
+	background-color: #000;
+}
+
+#sidebarColors,#sidebarOthers,#main {
+	position: fixed;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+
+#main {
+	overflow: hidden;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+}
+
+/*LANDSCAPE*/
+.landScapeS #main {
+	left: 15%;
+	right: 8%;
+	bottom: 0;
+	top: 0;
+}
+
+.landScapeS #sidebarColors {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 85%;
+	-moz-border-radius-bottomright: 1em;
+	border-bottom-right-radius: 1em;
+	-moz-border-radius-topright: 1em;
+	border-top-right-radius: 1em;
+	-moz-border-radius-bottomright: 1em;
+}
+
+.landScapeS #sidebarOthers {
+	top: 0;
+	bottom: 0;
+	left: 92%;
+	right: 0;
+	-moz-border-radius-bottomleft: 1em;
+	border-bottom-left-radius: 1em;
+	-moz-border-radius-topleft: 1em;
+	border-top-left-radius: 1em;
+	-moz-border-radius-bottomleft: 1em;
+}
+
+.landScapeS #containerColors {
+	position: fixed;
+	left: 1%;
+	top: 5%;
+	bottom: 5%;
+	width: 13%;
+}
+
+.landScapeS #containerColors .block {
+	height: 16.66%;
+	width: 50%;
+	float: left;
+}
+
+.landScapeS #containerOthers {
+	position: fixed;
+	top: 5%;
+	right: 1%;
+	bottom: 5%;
+	width: 6%;
+}
+
+.landScapeS  #containerOthers .block {
+	height: 10%;
+	width: 100%;
+}
+
+/*PORTRAIT*/
+.portraitS #main {
+	top: 20%;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+}
+
+.portraitS #sidebarColors {
+	top: 0;
+	bottom: 80%;
+	left: 0;
+	right: 0;
+	-moz-border-radius-bottomright: 1em;
+	border-bottom-right-radius: 1em;
+	-moz-border-radius-bottomleft: 1em;
+	border-bottom-left-radius: 1em;
+	-moz-border-radius-bottomright: 1em;
+}
+
+.portraitS #sidebarOthers {
+	top: 90%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-moz-border-radius-topright: 1em;
+	border-top-right-radius: 1em;
+	-moz-border-radius-topleft: 1em;
+	border-top-left-radius: 1em;
+}
+
+.portraitS #containerColors {
+	position: fixed;
+	left: 5%;
+	right: 5%;
+	top: 1%;
+	height: 17%;
+}
+
+.portraitS #containerColors .block {
+	width: 16.66%;
+	float: left;
+	height: 50%;
+}
+
+.portraitS #containerOthers {
+	position: fixed;
+	top: 91%;
+	bottom: 1%;
+	left: 5%;
+	right: 5%;
+}
+
+.portraitS  #containerOthers .block {
+	height: 100%;
+	width: 10%;
+	float: left;
+}
+
+.portraitS .pen {
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+}
+
+/* BLOQUES */
+.block {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.colorNotSelected,.colorSelected {
+	cursor: pointer;
+}
+
+.colorNotSelected {
+	background-image: url('../img/not_selected.png');
+}
+
+.colorSelected {
+	background-image: url('../img/selected.png');
+}
+
+.pen_s {
+	background-image: url('../img/pen_s.png');
+	cursor: pointer;
+}
+
+.pen_n {
+	background-image: url('../img/pen_n.png');
+	cursor: pointer;
+}
+
+.pen_b {
+	background-image: url('../img/pen_b.png');
+	cursor: pointer;
+}
+
+#containerOthers .selected {
+	opacity: 1;
+}
+
+#containerOthers .notSelected {
+	opacity: 0.3;
+}
+
+.reset {
+	background-image: url('../img/recycle.png');
+	cursor: pointer;
+}

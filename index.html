@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,target-densitydpi=device-dpi" />
+<title></title>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="shortcut icon" href="icon.ico">
+</head>
+<body onload="start()">
+	<div id="page1" class="page">
+		<img id="logo" src="img/logo.png">
+		<div class="page" id="subpage">
+			<h1 id="title"></h1>
+			<h2 id="showLanguages"></h2>
+			<img src="img/loading.gif">
+			<h4>appsforlucas.com</h4>
+		</div>
+	</div>
+	<div id="page2" class="page">
+		<div id="main">
+			<canvas id="canvasZone" width="1" height="1"></canvas>
+		</div>
+		<div id="sidebarColors">
+			<div id="containerColors"></div>
+		</div>
+		<div id="sidebarOthers">
+			<div id="containerOthers"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/animationFrame.js"></script>
+	<script type="text/javascript" src="js/events.js"></script>
+	<script type="text/javascript" src="js/audioBox.js"></script>
+	<script type="text/javascript" src="js/colors.js"></script>
+	<script type="text/javascript" src="js/pens.js"></script>
+	<script type="text/javascript" src="js/reset.js"></script>
+	<script type="text/javascript" src="js/paint.js"></script>
+	<script type="text/javascript" src="js/pdl.js"></script>
+	<script type="text/javascript">
+		<!-- skip -->
+		var Config = {};
+
+		Config.language = 'es';
+		Config.languageName = 'Español';
+		Config.title = 'Pizara de Lucas';
+		<!-- skip end -->
+
+		var pdl=null; 
+		function start() {
+			pdl=new Pdl();
+			pdl.start();
+		}
+
+		document.addEventListener('tizenhwkey', function(e) {
+			if (e.keyName == "back") {
+				tizen.application.getCurrentApplication().exit();
+			}
+		});
+	</script>
+</body>
+</html>
