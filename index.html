@@ -16,7 +16,7 @@
 			<h1 id="title"></h1>
 			<h2 id="showLanguages"></h2>
 			<img src="img/loading.gif">
-			<h4>appsforlucas.com</h4>
+			<h4>pablo.gallegofalcon.com</h4>
 		</div>
 	</div>
 	<div id="page2" class="page">
@@ -40,25 +40,16 @@
 	<script type="text/javascript" src="js/paint.js"></script>
 	<script type="text/javascript" src="js/pdl.js"></script>
 	<script type="text/javascript">
-		<!-- skip -->
 		var Config = {};
-
 		Config.language = 'es';
 		Config.languageName = 'Español';
 		Config.title = 'Pizara de Lucas';
-		<!-- skip end -->
 
 		var pdl=null; 
 		function start() {
 			pdl=new Pdl();
 			pdl.start();
 		}
-
-		document.addEventListener('tizenhwkey', function(e) {
-			if (e.keyName == "back") {
-				tizen.application.getCurrentApplication().exit();
-			}
-		});
 	</script>
 </body>
 </html>
